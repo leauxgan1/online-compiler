@@ -1,0 +1,51 @@
+
+body {
+	background: #414141;
+	color: #FFFFFF;
+	font-family:monospace, Courier, 'Courier New';
+	overflow: none;
+	scroll-behavior:unset;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+nav {
+	background: #A0A0A0;
+	border: 1px solid gray;
+	border-radius: 15px;
+	color: #30FF30;
+	max-width: 20vw;
+	padding: 1rem;
+}
+
+
+#editor-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#editor-container > button {
+	flex-grow: 1;
+	border: 1px solid black;
+	background: #A1A1A1;
+	font-size: 1.5rem;
+	line-height: 10px;
+}
+
+#editor {
+	background: #151515;
+	resize: none;
+	color: #30FF30;
+	border: 3px solid black;
+	border-radius: 8px;
+	outline: none;
+	font-size: 1.5rem;
+	max-width: 70vw;
+	max-height: 80vh;
+	margin-bottom: 1rem;
+}
+
+
+

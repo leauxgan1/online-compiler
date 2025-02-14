@@ -5,7 +5,6 @@
     <!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
 		<link rel="stylesheet" href="./styles/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://unpkg.com/htmx.org@2.0.4"></script>
     <title>Online Compiler</title>
   </head>
   <body>
@@ -14,18 +13,17 @@
 			<h2> Welcome to your online coding platform </h2>
 		</nav>
     <div id="editor-container">
-			<form for="code-submit">
-				<textarea 
-					 id="editor" 
-					 rows="50" 
-					 cols="150" 
-					 placeholder="Type away!" 
-					 spellcheck="false"
-				 > </textarea>  
-			</form>
-			<button> Compile </button>
-			<button> Run </button>
+			<textarea 
+				 id="editor" 
+				 rows="50" 
+				 cols="150" 
+				 placeholder="Compile your go code and see the result!" 
+				 spellcheck="false"
+			 > </textarea>  
+			<button onClick="compileCode()"> Compile </button>
+			<button onClick="runCode()"> Run </button>
 		</div>
-    <script type="module" src="/src/main.ts"></script>
+		<script type="module" src="/src/setup.ts"></script>
+    <script type="module" src="/src/server.ts" defer></script>
   </body>
 </html>

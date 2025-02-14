@@ -8,10 +8,10 @@ export function setupEditor(editor: HTMLTextAreaElement) {
 							const value = editor.value;
 
 							// Insert four spaces at the current cursor position
-							editor.value = value.substring(0, start) + '    ' + value.substring(end);
+							editor.value = value.substring(0, start) + "  " + value.substring(end);
 
 							// Move the cursor to the correct position
-							editor.selectionStart = editor.selectionEnd = start + 4;
+							editor.selectionStart = editor.selectionEnd = start + 2;
 					}
 			});
 	});
